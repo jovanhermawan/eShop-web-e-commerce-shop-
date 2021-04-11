@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>MyShop</title>
+        <link rel="stylesheet" href="main.css?=v1.1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+        <!-- bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        
+        <link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+        
+        <!-- global styles -->
+        <link href="themes/css/flexslider.css" rel="stylesheet"/>
+        <link href="themes/css/main.css" rel="stylesheet"/>
+
+        <!-- scripts -->
+        <script src="themes/js/jquery-1.7.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>               
+        <script src="themes/js/superfish.js"></script>  
+        <script src="themes/js/jquery.scrolltotop.js"></script>
+    </head>
+    <body>
+       
+        <!--TopBar-->
+        <div id="topBar-main" class="topBar-main">
+            <button id="toggleButton" class="sideBar-toggleButton">&#9776; Search</button>
+            <div class="accountSettings-dropDown-main">
+                <button onclick="accountSettings()" class="accountSettings-button"><i class="fa fa-user icon"></i></button>
+            </div>
+        </div>
+        
+        
+        <!--SideBar-->
+        <div id="sidebar" class="sideBar-main">
+            <form method="get" action="search">
+                <div class="filterDropdown-topPart">
+                    <input class="filterDropdown-prodName" type="text" name="search" placeholder="Search"/>
+                    <button type="submit" class="filterDropdown-submitButton" value="Search"><i class="fa fa-search"></i></button>
+                    <!--<input class="filterDropdown-submitButton" type="submit" value="Search"/>-->
+                </div>
+                
+                
+            </form>
+        </div>
+        <!--Main-->
+        <div id="main" class="main">
+                <div id="sortBar" class="sortBar-main"style="border-radius:10px; padding-left:auto; padding-right:auto">
+                    <center><span style="font-size:25">Sort by : </span>
+                    <div class="sortBar-dropDown">
+                        <p class="sortBar-dropDown-title">Name</p>
+                        <div class="sortBar-dropDown-list">
+                            <li><form method="get" action="atoz"><input class="sortBar-dropDown-content" type="submit" value="A to Z"/></form></li>
+                            <li><form method="get" action="ztoa"><input class="sortBar-dropDown-content" type="submit" value="Z to A"/></form></li>
+                        </div>
+                    </div>
+                    <div class="sortBar-dropDown">
+                        <p class="sortBar-dropDown-title">Category</p>
+                        <div class="sortBar-dropDown-list">
+                            <li><form method="get" action="stationeries"><input class="sortBar-dropDown-content" type="submit" value="Stationeries"/></form></li>
+                            <li><form method="get" action="clothes"><input class="sortBar-dropDown-content" type="submit" value="Clothes"/></form></li>
+                            <li><form method="get" action="music"><input class="sortBar-dropDown-content" type="submit" value="Musical Instruments"/></form></li>
+                            <li><form method="get" action="electronics"><input class="sortBar-dropDown-content" type="submit" value="Electronics"/></form></li>
+                            <li><form method="get" action="furniture"><input class="sortBar-dropDown-content" type="submit" value="Furniture"/></form></li>
+                            <li><form method="get" action="books"><input class="sortBar-dropDown-content" type="submit" value="Books"/></form></li>
+                            <li><form method="get" action="kitchen"><input class="sortBar-dropDown-content" type="submit" value="Kitchen"/></form></li>
+                        </div>
+                    </div>
+                    <div class="sortBar-dropDown">
+                        <p class="sortBar-dropDown-title">Rating</p>
+                        <div class="sortBar-dropDown-list">
+                            <li><form method="get" action="ratingasc">
+                                <input class="sortBar-dropDown-content" type="submit" value="Lowest to Highest"/></form></li>
+                            <li><form method="get" action="ratingdes"><input class="sortBar-dropDown-content" type="submit" value="Highest to Lowest"/></form></li>
+                        </div>
+                    </div>
+                    <div class="sortBar-dropDown" >
+                        <p class="sortBar-dropDown-title">Price</p>
+                        <div class="sortBar-dropDown-list">
+                            <li><form method="get" action="pricefilter">
+                                <input class="sortBar-dropDown-content" type="submit" value="Lowest to Highest"/></form></li>
+                            <li><form method="get" action="pricefilter2"><input class="sortBar-dropDown-content" type="submit" value="Highest to Lowest"/></form></li>
+                        </div></center>
+                    </div>
+                    <center><img src="myshop.jpeg" style="width:50%">   </center>
+                </div>  
+        <script type="text/javascript" src="main.js?v=1.1"></script>
+    </body>
+</html>

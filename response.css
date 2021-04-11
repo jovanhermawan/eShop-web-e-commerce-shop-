@@ -1,0 +1,351 @@
+/*filterDropdown*/
+.images{
+    width:300px;
+}
+body{
+    background-color:white;
+}
+img{
+    width:300px;
+}
+
+.filterDropdown-main
+{
+    display: block;
+}
+
+.filterDropdown-title
+{
+    background-color: #cc4040;
+    color: #f0f0f0;
+
+    font-size: 16px;
+    text-align: center;
+
+    padding: 8px;
+    border: none;
+}
+
+.filterDropdown-list
+{
+    background-color: #f0f0f0;
+    color: #242424;
+    font-size: 12px;
+    border: none;
+
+    display: none;
+    list-style-type: none;
+}
+
+.filterDropdown-priceRange
+{
+    background-color: #f0f0f0;
+    color: #242424;
+    font-size: 12px;
+    border: none;
+
+    margin: auto;
+    width: 90%;
+
+    display: none;
+    list-style-type: none;
+}
+
+.filterDropdown-priceBox
+{
+    width: 35%;
+}
+
+.filterDropdown-topPart
+{
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+
+.filterDropdown-prodName
+{
+    width: 70%;
+    padding: 8px;
+
+    font-size: 16px;
+    
+    border: 1px solid #f0f000;
+}
+
+.filterDropdown-submitButton
+{
+    width: 20%;
+
+    font-size: 16px;
+    background-color: #f05500;
+    color: #f0f0f0;
+
+    padding: 8px;
+    border: 1px solid #f0f000;
+    border-left: none;
+
+    cursor: pointer;
+}
+
+.filterDropdown-clearButton
+{
+    font-size: 12px;
+    background-color: #f05500;
+    color: #f0f0f0;
+
+    padding: 4px;
+    top: 0;
+    border: none;
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    display: block;
+
+    cursor: pointer;
+}
+
+.filterDropdown-main:hover  .filterDropdown-list { display: block; }
+.filterDropdown-main:hover  .filterDropdown-priceRange { display: block; }
+.filterDropdown-main:hover  .filterDropdown-title { background-color: #f02020; }
+
+/*topBar*/
+.topBar-main
+{
+    overflow: hidden;
+    background-color: #cc4040;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.sideBar-toggleButton
+{  
+    font-size: 20px;
+    background-color: #f05500;
+    color: #f0f0f0;
+
+    padding: 10px 15px;
+    top: 0;
+    border: none;
+    
+    float: left;
+
+    cursor: pointer;
+}
+.sideBar-toggleButton:hover { background-color: #c05500; }
+
+.accountSettings-button
+{
+    height: 100%;
+
+    padding: 17px 17px;
+    top: 0;
+    border: none;
+
+    float: right;
+    margin-right: 40px;
+
+    cursor: pointer;
+    background-color: #f05500;
+}
+.accountSettings-button:hover { background-color: #c05500; }
+
+.accountSettings-dropDown-main
+{
+    position: relative;
+    display: block;
+}
+
+.accountSettings-dropDown-list
+{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f6f6f6;
+    box-shadow: 0px 8px 16px 0px #00000060;
+    
+    padding: 20px;
+    list-style-type: none;
+}
+.accountSettings-contents
+{
+    background-color: #f6f6f6;
+    border: none;
+}
+.accountSettings-contents:hover { background-color: #d0d0d0; }
+
+.accountSettings-logOut
+{
+    border: none;
+    width: 100%;
+
+    outline: none;
+    padding: 4px;
+    background-color: #cc4040;
+
+    color: white;
+    text-align: center;
+
+    cursor: pointer;
+}
+.accountSettings-logOut:hover { background-color: #f02020; }
+
+.show { display:block; }
+
+/*sideBar*/
+.sideBar-main
+{
+    height: 100%;
+    width: 0;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+/*sideBar*/
+.sortBar-main
+{
+    background-color: #e0e0e0;
+    border: 1px solid #606060;
+    margin: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.sortBar-button
+{
+    background-color: #cc4040;
+    color: #f0f0f0;
+
+    font-size: 16px;
+    text-align: center;
+
+    padding: 8px 40px;
+    border: none;
+
+    cursor: pointer;
+}
+.sortBar-button:hover {background-color: #994040;}
+
+.sortBar-dropDown
+{
+    display: inline-block;
+}
+
+.sortBar-dropDown-title
+{
+    background-color: #cc4040;
+    color: #f0f0f0;
+
+    font-size: 16px;
+    text-align: center;
+
+    padding: 8px 40px;
+    border: none;
+}
+
+.sortBar-dropDown-list
+{
+    color: #242424;
+    font-size: 12px;
+    border: none;
+
+    position: absolute;
+
+    display: none;
+    list-style-type: none;
+}
+
+.sortBar-dropDown-content
+{
+    background-color: #cc4040;
+    color: #f0f0f0;
+
+    font-size: 12px;
+
+    padding: 4px;
+    border: none;
+
+    cursor: pointer;
+}
+.sortBar-dropDown-content:hover { background-color: #994040; }
+
+.sortBar-dropDown:hover  .sortBar-dropDown-title { background-color: #994040; }
+.sortBar-dropDown:hover  .sortBar-dropDown-list { display: block; }
+
+.main
+{
+    margin-top: 60px;
+    transition: 0.5s;
+}
+
+/*Products*/
+.row
+{
+    margin: 8px -16px;
+}
+  
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column
+{
+    padding: 1%;
+}
+  
+  /* Create four equal columns that floats next to each other */
+.column
+{
+    float: left;
+    width: 300;
+    height:600;
+}
+  
+  /* Clear floats after rows */
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.product-card
+{
+    box-shadow: 0 4px 8px 0 #00000060;
+    margin: auto;
+}
+.product-card button
+{
+    border: none;
+    width: 100%;
+    outline: 0;
+    padding: 12px;
+    background-color: #cc4040;
+
+    font-size: 18px;
+    color: white;
+    text-align: center;
+
+    cursor: pointer;
+}
+.product-card button:hover { background-color: #f02020; }
+.product-card p, h3
+{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.product-rating
+{
+    text-align: right;
+}
+
